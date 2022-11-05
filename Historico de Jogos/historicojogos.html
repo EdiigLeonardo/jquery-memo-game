@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Histórico de Jogos</title>
+    <link rel="stylesheet" href="historicojogos.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--    <img id="gameLogo" src="../Imagens/iconAtual.png" alt="Game logo">-->
+
+    <div class="voltar">
+        <button class="btn_generic btn-light btn-lg btn-block" onclick="location.href='../Pagina Principal/paginaprincipal.html'">
+            VOLTAR À PÁGINA PRINCIPAL
+        </button>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+<!--                                <img id="galo" src="../Imagens/iconJogoDoGalo.jpg" class="card-img-top" alt="Jogo do Galo">-->
+                                <h5 class="card-title">Jogo do Galo</h5>
+                            </div>
+                            <div class="flip-card-back">
+                                <p id="inserir"></p>
+                                <p id="adicionar"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+<!--                                <img id="quatro" src="../Imagens/iconJogo4EmLinha.jpg" class="card-img-top" alt="Quatro em Linha">-->
+                                <h5 class="card-title">Quatro em Linha</h5>
+                            </div>
+                            <div class="flip-card-back">
+                                <div id="UltimoJogador">Último Jogador</div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <p class="estiloBackFlip">Vencedor:&nbsp;&nbsp;</p> <p id="historicoNome"></p>
+                                </div>
+
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <p class="estiloBackFlip">Tempo de Jogo:&nbsp;&nbsp;</p> <p id="historicoTempo"></p>
+                                </div>
+
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <p class="estiloBackFlip">Data do Jogo:&nbsp;&nbsp;</p> <p id="historicoData"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+<!--                                <img id="memoria" src="../Imagens/iconJogoDaMemoria.png" class="card-img-top" alt="Jogo da Memória">-->
+                                <h5 class="card-title">Jogo da Memória</h5>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="ultimo-jogador">Último Jogador</div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <p class="estiloBackFlip">Vencedor:&nbsp;&nbsp;</p> <p class="name-state"></p>
+                                </div>
+
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <p class="estiloBackFlip">Tempo de Jogo:&nbsp;&nbsp;</p> <p class="time-state"></p>
+                                </div>
+
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <p class="estiloBackFlip">Data do Jogo:&nbsp;&nbsp;</p> <p class="date-state"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p id="colorFooter">Copyright © Edig, Miguel, Karoline 2022</p>
+    </div>
+
+<script src="./historicojogos.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+#gameLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    width: 130px;
+    height: 150px;
+}
+
+.card {
+    width: 22rem;
+    margin: 0 auto;
+    padding-top: 5px;
+    border-color: #826c58 !important;
+}
+
+.card-title {
+    background-color: #D2B48C;
+    padding: 5px;
+}
+
+.btn-light {
+    width: 200px;
+    background-color: #826c58 !important;
+    color: white !important;
+}
+
+.btn-block {
+    width: 400px;
+    background-color: #826c58 !important;
+    color: white !important;
+}
+
+button {
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    border-color: lightgrey;
+}
+
+#galo {
+    width: 110px;
+    height: 110px;
+    padding-bottom: 20px;
+}
+
+#quatro {
+    width: 90px;
+    height: 110px;
+    padding-bottom: 20px;
+}
+
+#memoria {
+    width: 90px;
+    height: 110px;
+    padding-bottom: 20px;
+}
+
+.item {
+    width: max-content;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.voltar {
+    width: max-content;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    color: #666966;
+    font-family: Arial sans-serif;
+}
+
+.card-footer {
+    height: 40px;
+    line-height: 40px;
+    background-color: #D2B48C !important;
+    color: black !important;
+    text-align: center;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    color: black !important;
+    text-align: center;
+    width: 100%;
+    height: 0;
+    line-height: 2.5rem;
+}
+
+#colorFooter {
+    background-color: #D2B48C !important;
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: white;
+    margin-top: 15px;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: #F0F8FF;
+    border: 2px solid #b6ddfd;
+    border-radius: 20px;
+    color: #382f26;
+    transform: rotateY(180deg);
+    font-size: larger;
+    padding-top: 10px;
+}
+
+.card-body {
+    margin-top: 20px;
+}
+
+.estiloBackFlip {
+    font-weight: bold;
+    display: inline-flex;
+    color: #826c58 !important;
+}
+
+#UltimoJogador {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: x-large;
+    color: #7a5e44;
+}
+
+@media (max-width: 576px !important){
+    .row>* {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+        padding-right: calc(1.5rem * .5);
+        padding-left: calc(1.5rem * .5);
+        margin-top: 0;
+    }
+}

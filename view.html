@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Memory Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="menu-header">
+    <div id="gameLogo">
+        <img src="logo-img.jpeg" alt="Game logo">
+    </div>
+    <h1>Memory Game</h1>
+    <div class="clock">
+        <span id="count-up">00:00</span>
+    </div>
+</div>
+<div class="container">
+    <a id="btn-start" class="btn_generic buttons-difficulty">Start</a>
+    <div class="popup-container-div" >
+        <h5> Who's Playing ?? </h5>
+        <span>Write your name and press one of the items below:</span>
+        <label for="player" class="buttons-difficulty">
+            <input placeholder="What's Your Name?"
+                   id="player"
+                   type="text"
+                   class="buttons-difficulty"
+                   required=""
+                   pattern="[A-Za-z\s]+$"
+                   title="This name is not avaible"/>
+        </label>
+        <h3>Choose Difficulty</h3>
+        <a class="btn_generic buttons-difficulty" id="grid-value-1">
+            <span>Easy</span>
+            <span>3 X 4</span>
+        </a>
+        <a class="btn_generic buttons-difficulty" id="grid-value-2">
+            <span>Medium</span>
+            <span>4 X 4</span>
+        </a>
+        <a class="btn_generic buttons-difficulty" id="grid-value-3">
+            <span>PRO</span>
+            <span>4 X 5</span>
+        </a>
+    </div>
+    <section class="memory-game" id="memory-game">
+
+    </section>
+    <div class="winner-pop-up">
+        <div class="">
+            <span></span>
+            <h3>You Won</h3>
+            <a class="btn_generic" id="winner_return_button">Return</a>
+            <span></span>
+        </div>
+    </div>
+    <div class="footer">
+        <p>
+            Copyright © Edig, Miguel, Karoline 2022
+        </p>
+    </div>
+    <script src="script.js"></script>
+</div>
+</body>
+</html>
